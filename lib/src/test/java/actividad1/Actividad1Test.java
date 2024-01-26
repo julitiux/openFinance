@@ -3,20 +3,22 @@ package actividad1;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
-import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class Actividad1Test {
 
   @Test
-  public void test() {
-    List<String> result =
+  public void actividad1() {
+    assertThat(
       Actividad1.executeActividad(
         methods -> methods
-          .setResult(Arrays.asList("Hello", "Hello", "Bye", "World"))
+          .distinctList()
           .filter()
           .reverseStringList()
-      );
-    System.out.println(result);
+        , Arrays.asList("Hello", "Hello", "Bye", "World"))
+    ).contains("eyB");
   }
 
 }
