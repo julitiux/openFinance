@@ -1,4 +1,4 @@
-package actividad1;
+package basic;
 
 import java.util.List;
 import java.util.function.Consumer;
