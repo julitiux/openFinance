@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 public class Actividad1 {
 
-  public static List<String> result;
+  private static List<String> result;
 
   public Actividad1 (List<String> result) {
     Actividad1.result = result;
